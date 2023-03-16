@@ -55,10 +55,11 @@ const typeDescription = (type) => {
       }
         
       const url = `https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/party`;
+      const token = 'Your token'
       const headers = {
           Accept: "application/json",
           "Content-Type": "application/json",
-          Authorization: `Token 7017d1cf3833e85e8b0a4b96e5231506fa2bedc1`,
+          Authorization: `Token ${token}`,
       };
       const payload = {
           query: inputValue,
